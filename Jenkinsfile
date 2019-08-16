@@ -16,5 +16,10 @@ pipeline {
                 sleep time: 10, unit: 'NANOSECONDS' 
             }
         }
+    stage('added') { 
+            steps {
+                ps -ef
+            }
+        }
     }
 }
